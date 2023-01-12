@@ -1,0 +1,170 @@
+body{
+  font-family: 'Lato', sans-serif;
+  color:  #041e42;
+}
+h1{
+  position: relative;
+  left: 5%;
+  
+  display: inline-block;
+  
+}
+/*the semi underline for the title*/
+
+h1::after{
+  content: '';
+  height: 3px;
+  width: 40px;
+  top:40px ;
+  left: 0;
+  background-color: rgb(199, 110, 77);
+  position: absolute;
+}
+i{
+  color: #041e42;
+}
+.container{
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  border: 1px solid #e2e9e1;
+}
+
+/*the product container (image,name,price ,quantity and like)*/
+
+#cart {
+    width: 60%;
+    padding: 30px; 
+  }
+
+  #cart-items {
+    width: 100%;
+    border-collapse: collapse; 
+    
+  }
+
+  .cart-item ,
+  .table-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px; 
+    border: 1px solid #e2e9e1;
+    padding: 5px;
+      
+  }
+  .table-header{
+    background-color: rgb(199, 110, 77);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 4px;
+   }
+   
+  
+  
+  .cart-item img {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(199, 110, 77);
+  }
+  
+  .cart-item .name {
+    font-weight: bold;
+     
+  }
+  .cart-item .price{
+    color: rgb(122, 126, 129);
+  }
+ 
+  
+  .cart-item .quantity-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80px;
+    
+  }
+
+  /*some animation for the icons */
+
+  .cart-item button {
+    font-size: inherit;
+     background-color:transparent ;
+     outline: none;
+     border: none; 
+   }
+   
+   
+   .cart-item button:hover {
+     cursor: pointer;
+     animation: Wizz 0.5s;
+   }
+   
+   @keyframes Wizz {
+     0%,
+     100% {
+       transform: scale(1, 1);
+     }
+     25% {
+       transform: scale(0.9, 1.1);
+     }
+     50% {
+       transform: scale(1.1, 0.9);
+     }
+     75% {
+       transform: scale(0.95, 1.05);
+     }
+   }
+
+ 
+  .cart-item .heart{
+    cursor: pointer;
+    
+    
+  }
+  
+  .cart-item .liked i {
+    color: #1198f6;
+    cursor: pointer;
+  }
+
+  /* the total container in the bottom right*/
+
+ #total{
+    width: 40%;
+    padding: 30px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column; 
+ }
+#total table{
+    border-collapse: collapse;
+    width: 100%;
+
+    
+}
+#total table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+#total button{
+  background-color: rgb(199, 110, 77);
+  color: #fff;
+  padding: 12px 20px;
+  width: 20%;
+  border: transparent;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+
+
+  
+  
+
+  
+  
