@@ -53,13 +53,25 @@ i{
     padding: 5px;
       
   }
+ 
   .table-header{
     background-color: rgb(199, 110, 77);
     color: #fff;
     padding: 10px 0;
     border-radius: 4px;
    }
+   .table-header :nth-child(1),
+   .table-header :nth-child(2),
+   .table-header :nth-child(5){
+    position: relative;
+    left: 8px;
+   }
    
+   .table-header :nth-child(3),
+   .table-header :nth-child(4){
+    position: relative;
+    left: 15px;
+   }
   
   
   .cart-item img {

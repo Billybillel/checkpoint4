@@ -76,8 +76,8 @@ function updateCart() {
 
  // some product preselected 
 
- addItemToCart('Puma Rs', 72, './image/P1.jpeg') 
- addItemToCart('Puma R78', 65, './image/P2.jpeg') 
- addItemToCart('Puma Sneakers',83, './image/P3.jpeg') 
- addItemToCart('Puma Classic', 41, './image/P4.jpeg') 
+ addItemToCart('Puma Rs',72,'./image/P1.jpg') 
+ addItemToCart('Puma R7',65,'./image/P2.jpg') 
+ addItemToCart('Puma Sn',83,'./image/P3.jpg') 
+ addItemToCart('Puma Cl',41,'./image/P4.jpg') 
  
